@@ -10,6 +10,10 @@ class App extends React.Component {
       c: "",
       d: "",
       det: "",
+      e:"",
+      f:"",
+      g:"",
+      h:"",
       allowInvert: false,
       showDet: false
     }
@@ -31,7 +35,8 @@ class App extends React.Component {
             </table>
             </div>
             <br />
-          <button onClick={this.invert}>Calculate Det</button>
+          <button onClick={this.invert}>Invert</button>
+          <button onClick={this.reset}>Reset</button>
           <hr />
           <div>
             {this.state.showDet? <p>det = {this.state.det}</p> : <p></p>}
@@ -40,12 +45,12 @@ class App extends React.Component {
             <div className="vector">
               <table className="matrix">
                 <tr>
-                  <td>{this.state.d}</td>
-                  <td>{this.state.b}</td>
+                  <td>{this.state.h}</td>
+                  <td>{this.state.f}</td>
                 </tr>
                 <tr>
-                  <td>{this.state.c}</td>
-                  <td>{this.state.a}</td>
+                  <td>{this.state.g}</td>
+                  <td>{this.state.e}</td>
                 </tr>
               </table>
             </div> : <p>If determinant is equal to 0, the matrix is not invertible.</p>}
@@ -70,12 +75,23 @@ class App extends React.Component {
     } else {
       this.setState(state => ({
         allowInvert: true,
-        a: state.a/state.det,
-        b: state.b/state.det*-1,
-        c: state.c/state.det*-1,
-        d: state.d/state.det,
+        e: state.a/state.det,
+        f: state.b/state.det*-1,
+        g: state.c/state.det*-1,
+        h: state.d/state.det,
       }))
     }
+  }
+  reset = () => {
+    this.setState(state => ({
+      a:"",
+      b:"",
+      c:"",
+      d:"",
+      det:"",
+      showDet:"",
+      allowInvert: false
+    }))
   }
 }
 
