@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/matrix_inverter/static/css/main.5edc3b7e.chunk.css",
+    "main.js": "/matrix_inverter/static/js/main.a7930f78.chunk.js",
+    "main.js.map": "/matrix_inverter/static/js/main.a7930f78.chunk.js.map",
+    "runtime-main.js": "/matrix_inverter/static/js/runtime-main.34fb4310.js",
+    "runtime-main.js.map": "/matrix_inverter/static/js/runtime-main.34fb4310.js.map",
+    "static/js/2.b561d067.chunk.js": "/matrix_inverter/static/js/2.b561d067.chunk.js",
+    "static/js/2.b561d067.chunk.js.map": "/matrix_inverter/static/js/2.b561d067.chunk.js.map",
+    "index.html": "/matrix_inverter/index.html",
+    "precache-manifest.b71d2d1d71f6153b29ed5b6a2881a3f7.js": "/matrix_inverter/precache-manifest.b71d2d1d71f6153b29ed5b6a2881a3f7.js",
+    "service-worker.js": "/matrix_inverter/service-worker.js",
+    "static/css/main.5edc3b7e.chunk.css.map": "/matrix_inverter/static/css/main.5edc3b7e.chunk.css.map",
+    "static/js/2.b561d067.chunk.js.LICENSE.txt": "/matrix_inverter/static/js/2.b561d067.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.34fb4310.js",
+    "static/js/2.b561d067.chunk.js",
+    "static/css/main.5edc3b7e.chunk.css",
+    "static/js/main.a7930f78.chunk.js"
+  ]
+}
