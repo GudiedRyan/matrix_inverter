@@ -36,6 +36,7 @@ class App extends React.Component {
             </div>
             <br />
           <button onClick={this.invert}>Invert</button>
+          <button onClick={this.reset}>Reset</button>
           <hr />
           <div>
             {this.state.showDet? <p>det = {this.state.det}</p> : <p></p>}
@@ -80,6 +81,17 @@ class App extends React.Component {
         h: state.d/state.det,
       }))
     }
+  }
+  reset = () => {
+    this.setState(state => ({
+      a:"",
+      b:"",
+      c:"",
+      d:"",
+      det:"",
+      showDet:"",
+      allowInvert: false
+    }))
   }
 }
 
